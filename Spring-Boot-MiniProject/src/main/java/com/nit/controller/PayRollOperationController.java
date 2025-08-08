@@ -13,8 +13,7 @@ public class PayRollOperationController {
     private IEmployeeMgmtService service;
     public List<Employee> showAllEmployeesByDesignation(String desg1,String desg2,String desg3) throws Exception{
         //use service
-         List<Employee> list=service.fetchEmployeeByDesignation(desg1, desg2, desg3);
-        return list;
+        return service.fetchEmployeeByDesignation(desg1, desg2, desg3);
     }
 
 }

@@ -4,7 +4,6 @@ import com.nit.controller.PayRollOperationController;
 import com.nit.model.Employee;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.ApplicationContext;
 import org.springframework.context.ConfigurableApplicationContext;
 
 import java.util.List;
@@ -21,7 +20,7 @@ public class SpringBootMiniProjectApplication {
         try {
             List< Employee> list=controller.showAllEmployeesByDesignation("CLERK","MANAGER","SALESMAN");
             //process the result
-            list.forEach(employee -> {System.out.println(employee);});
+            list.forEach(System.out::println);
 
 
         }
