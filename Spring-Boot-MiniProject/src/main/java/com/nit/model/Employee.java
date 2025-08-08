@@ -11,7 +11,8 @@ public class Employee implements Serializable {
     private String designation;
     private Double salary;
     private Integer departmentNumber;
-
+    private double grossSalary;
+    private double netSalary;
 
 
 }

@@ -40,8 +40,8 @@ public class EmployeeDaoImplementation implements IEmployeeDao {
                     Employee employee = new Employee();
                     employee.setEmployeeNumber(rs.getInt(1));
                     employee.setEmployeeName(rs.getString(2));
-                    employee.setSalary(rs.getDouble(3));
-                    employee.setDesignation(rs.getString(4));
+                    employee.setDesignation(rs.getString(3));
+                    employee.setSalary(rs.getDouble(4));
                     employee.setDepartmentNumber(rs.getInt(5));
                     //add java bean class obj to list collection
                     list.add(employee);

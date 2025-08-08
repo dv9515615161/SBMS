@@ -21,6 +21,14 @@ public class EmployeeServiceImplementation implements IEmployeeMgmtService {
 
         //use DAO
          List <Employee> list= employeeDao.getEmployeeByDesignation(desg1,desg2,desg3);
+         //sort the object in List Collection
+        list.sort((t1,t2)->t1.getEmployeeNumber().compareTo(t2.getEmployeeNumber()));
+        //calculate gross salary and net salary
+        list.forEach(employee -> {
+            employee.setGrossSalary(employee.getSalary()+(employee.getSalary()*0.5));
+            employee.setNetSalary(employee.getGrossSalary()-(employee.getGrossSalary()*0.2));
+        });
+        return list;
 
 
     }
