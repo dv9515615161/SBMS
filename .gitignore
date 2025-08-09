@@ -80,3 +80,6 @@ $RECYCLE.BIN/
 *.tmp
 *.swp
 *.swo
+# IntelliJ IDEA project files
+.idea/
+*.iml
