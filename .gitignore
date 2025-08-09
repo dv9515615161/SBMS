@@ -81,5 +81,5 @@ $RECYCLE.BIN/
 *.swp
 *.swo
 # IntelliJ IDEA project files
-.idea/
+.idea
 *.iml
